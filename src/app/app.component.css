@@ -1,48 +1,51 @@
-
-
-input.input{
+input#input {
   width: 319px;
   padding: 0px;
   border: 1px;
   background-color: burlywood;
   margin-right: 3.5px;
   margin-left: 4.5px;
-  margin-top: 3px ;
+  margin-top: 3px;
   border-style: dashed;
 }
 
-input#input2{
+input#input2 {
   width: 319px;
   padding: 0px;
   border: 1px;
   background-color: burlywood;
   margin-right: 3.5px;
   margin-left: 4.5px;
-  margin-top: 3px ;
+  margin-top: 3px;
   border-style: dashed;
 }
-.calculator{
+
+.calculator {
   width: 330px;
   height: auto;
   border: 2px;
   border-style: double;
   background-color: lightslategrey;
+  display: inline-block;
+  align-content: center;
 }
-.buttons{
+
+.buttons {
   width: 324px;
   padding: 3px;
 }
-.buttons button{
+
+.buttons button {
   background-color: lightcoral;
   border-color: black;
   margin-right: 1.5px;
   margin-left: 1.5px;
   height: auto;
-  width:51px;
-  cursor:pointer;
+  width: 51px;
+  cursor: pointer;
 }
 
 .buttons button:hover {
   background-color: burlywood;
-  color:white;
+  color: white;
 }

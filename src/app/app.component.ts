@@ -10,11 +10,48 @@ import {log} from 'util';
 export class AppComponent {
   title = 'amiwCalculator';
 
-  clickMessage = '';
-  public val = 3;
   public result = '';
-  private val1: number;
-  private val2: number;
+
+  clearAll() {
+    if (this.result !== '') {
+      this.result = '';
+    }
+  }
+
+  operationResult() {
+    if (this.result !== '') {
+      if ((!this.result.endsWith('+') && !this.result.endsWith('-')) &&
+        (this.result.includes('+') || this.result.includes('-'))) {
+        var tmp = this.result;
+        var arrayOfStrings;
+        if (tmp.includes('+')) {
+          arrayOfStrings = tmp.split('+');
+          var x = parseInt(arrayOfStrings[0], 2);
+          var y = parseInt(arrayOfStrings[1], 2);
+          var sum = x + y;
+          this.result = sum.toString(2);
+        } else {
+          arrayOfStrings = tmp.split('-');
+          var x = parseInt(arrayOfStrings[0], 2);
+          var y = parseInt(arrayOfStrings[1], 2);
+          var sum = x - y;
+          this.result = sum.toString(2);
+        }
+      }
+    }
+  }
+
+  addPlus() {
+    if (!this.result.includes('+') && !this.result.includes('-')) {
+      this.result += '+';
+    }
+  }
+
+  addMinus() {
+    if (!this.result.includes('+') && !this.result.includes('-')) {
+      this.result += '-';
+    }
+  }
 
   addOne() {
     this.result = this.result + '1';
@@ -24,22 +61,12 @@ export class AppComponent {
     this.result = this.result + '0';
   }
 
-  clearAll() {
-    this.result = '';
-    this.val1 = 0;
-    this.val2 = 1;
-  }
-
   noNumber(e: KeyboardEvent) {
     console.log(e);
     if (e.key !== '0' && e.key !== '1') {
       e.preventDefault();
     }
     console.log(e.keyCode);
-  }
-
-  operationResult() {
-    this.result = '';
   }
 }
 

@@ -1,14 +1,14 @@
 <div class="calculator">
-  <input class="input" (keypress)="noNumber($event)"[value]=result>
+  <input id="input" (keypress)="noNumber($event)" [value]=result>
   <!-- <input class="input" type="text" [value]=val>-->
   <!--  <input class="input" type="text" value={{result}}>-->
   <div class="buttons">
     <button (click)="addZero()">0</button>
     <button (click)="addOne()">1</button>
-    <button>+</button>
-    <button>-</button>
-    <button (click)="clearAll()">CE</button>
+    <button (click)="addPlus()">+</button>
+    <button (click)="addMinus()">-</button>
     <button (click)="operationResult()">=</button>
+    <button (click)="clearAll()">CE</button>
   </div>
 </div>
 
