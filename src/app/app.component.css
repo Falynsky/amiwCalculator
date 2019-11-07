@@ -1,17 +1,23 @@
+
+
 input#input{
   width: 221px;
   padding: 0px;
   border: 0px;
   background-color: burlywood;
   margin-right: 1.5px;
-  margin-left: 1.5px;
+  margin-left: 4.5px;
 }
 .calculator{
-  width: 220px;
+  width: 230px;
+  height: 50px;
+  border: 2px;
+  border-style: double;
+  background-color: lightslategrey;
 }
 .buttons{
   width: 224px;
-  margin-top: 5px;
+  padding: 3px;
 }
 .buttons button{
   background-color: lightcoral;
@@ -19,7 +25,7 @@ input#input{
   margin-right: 1.5px;
   margin-left: 1.5px;
   height: auto;
-  width:53px;
+  width:41.8px;
   cursor:pointer;
 }
 
