@@ -1,51 +1,49 @@
-input#input {
-  width: 319px;
-  padding: 0px;
-  border: 1px;
-  background-color: burlywood;
-  margin-right: 3.5px;
-  margin-left: 4.5px;
-  margin-top: 3px;
-  border-style: dashed;
-}
 
-input#input2 {
-  width: 319px;
-  padding: 0px;
-  border: 1px;
-  background-color: burlywood;
-  margin-right: 3.5px;
-  margin-left: 4.5px;
-  margin-top: 3px;
-  border-style: dashed;
-}
-
-.calculator {
-  width: 330px;
-  height: auto;
-  border: 2px;
+.calculator{
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  border: 3px;
+  padding: 5px;
   border-style: double;
-  background-color: lightslategrey;
-  display: inline-block;
-  align-content: center;
+  background-color: lemonchiffon;
 }
-
 .buttons {
-  width: 324px;
-  padding: 3px;
+  margin-top: 10px;
+  margin-left: 5px;
 }
-
 .buttons button {
-  background-color: lightcoral;
-  border-color: black;
-  margin-right: 1.5px;
-  margin-left: 1.5px;
-  height: auto;
-  width: 51px;
+  border-color: darkgrey;
+  background-color: palevioletred;
+  height: 30px;
+  margin: 3px;
+  width: 31%;
   cursor: pointer;
 }
 
-.buttons button:hover {
+input#input{
+  width: 319px;
+  height: 30px;
+  padding: 0px;
+  border: 1px;
   background-color: burlywood;
-  color: white;
+  margin-top: 3px;
+  border-style: dashed;
+  font-size: 22px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+}
+
+.title{
+  margin-top: 2px;
+  margin-bottom: 2px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
 }

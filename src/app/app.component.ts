@@ -8,7 +8,7 @@ import {log} from 'util';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'amiwCalculator';
+  title = 'BINARY CALCULATOR';
 
   public result = '';
 
