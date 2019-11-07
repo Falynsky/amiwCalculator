@@ -1,11 +1,15 @@
 <div class="calculator">
-    <input id="input" type="text">
-<!--#To surround a code fragment -> Ctrl+Alt+J#-->
+  <input class="input" (keypress)="noNumber($event)"[value]=result>
+  <!-- <input class="input" type="text" [value]=val>-->
+  <!--  <input class="input" type="text" value={{result}}>-->
   <div class="buttons">
-    <button>0</button>
-    <button>1</button>
-    <button (click)="clickMe()">+</button>
+    <button (click)="addZero()">0</button>
+    <button (click)="addOne()">1</button>
+    <button>+</button>
     <button>-</button>
-    <button>=</button>
+    <button (click)="clearAll()">CE</button>
+    <button (click)="operationResult()">=</button>
   </div>
 </div>
+
+<!--#To surround a code fragment -> Ctrl+Alt+J#-->

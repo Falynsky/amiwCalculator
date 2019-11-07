@@ -1,22 +1,35 @@
 
 
-input#input{
-  width: 221px;
+input.input{
+  width: 319px;
   padding: 0px;
-  border: 0px;
+  border: 1px;
   background-color: burlywood;
-  margin-right: 1.5px;
+  margin-right: 3.5px;
   margin-left: 4.5px;
+  margin-top: 3px ;
+  border-style: dashed;
+}
+
+input#input2{
+  width: 319px;
+  padding: 0px;
+  border: 1px;
+  background-color: burlywood;
+  margin-right: 3.5px;
+  margin-left: 4.5px;
+  margin-top: 3px ;
+  border-style: dashed;
 }
 .calculator{
-  width: 230px;
-  height: 50px;
+  width: 330px;
+  height: auto;
   border: 2px;
   border-style: double;
   background-color: lightslategrey;
 }
 .buttons{
-  width: 224px;
+  width: 324px;
   padding: 3px;
 }
 .buttons button{
@@ -25,7 +38,7 @@ input#input{
   margin-right: 1.5px;
   margin-left: 1.5px;
   height: auto;
-  width:41.8px;
+  width:51px;
   cursor:pointer;
 }
 
