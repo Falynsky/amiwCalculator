@@ -1,15 +1,13 @@
 <div class="calculator">
   <div class="title">{{title}}</div>
-  <input id="input" (keypress)="noNumber($event)" [value]=result>
-  <!-- <input class="input" type="text" [value]=val>-->
-  <!--  <input class="input" type="text" value={{result}}>-->
+  <input id="input" (keyup)="onKeyUp()" (keypress)="noNumber($event)" [(ngModel)]=result>
   <div class="buttons">
-    <button (click)="addZero()">0</button>
-    <button (click)="addOne()">1</button>
+    <button (click)="addDigit($event)">0</button>
+    <button (click)="addDigit($event)">1</button>
     <button (click)="clearAll()">CE</button>
-    <button (click)="addPlus()">+</button>
-    <button (click)="addMinus()">-</button>
-    <button (click)="operationResult()">=</button>
+    <button (click)="addDigit($event)">+</button>
+    <button (click)="addDigit($event)">-</button>
+    <button (click)="operation()">=</button>
 
   </div>
 </div>
